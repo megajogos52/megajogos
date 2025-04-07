@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="javaScript/inicio.js"></script>
+</head>
+<body>
+
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex" href="inicio.html">
+                <img src="img/game.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Mega Jogos
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="termo" type="text" placeholder="Digite o nome do jogo" aria-label="Search">
+              <button class="btn btn-light" type="button" onclick="pesquisar()">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <p class="h2 text-center my-4">JOGOS DISPONÍVEIS</p>
+
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col jogo modern-combat-3">
+              <div class="card h-100">
+                <img src="https://mkt-web.gameloft.com/static/6a9dfba8eae4d364bb7db8b17e5ddff9.jpg" class="card-img-top" alt="..." height="180px">
+                <div class="card-body">
+                  <h5 class="card-title">Modern Combat 3</h5>
+                  <p class="card-text">Jogo Clássico de fps da Gameloft</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                    </small>
+                </div>
+              </div>
+            </div>
+            <div class="col jogo asphalt-5-hd">
+              <div class="card h-100">
+                <img src="https://images.forfun.com/v2/fetch/52/522b56047744b4d2155fa23a95e0e42d.jpeg" class="card-img-top" alt="..." height="180px">
+                <div class="card-body">
+                  <h5 class="card-title">Asphalt 5 HD</h5>
+                  <p class="card-text">Jogo clássico de corrida da Gameloft</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                    </small>
+                </div>
+              </div>
+            </div>
+            <div class="col jogo dead-space">
+              <div class="card h-100">
+                <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Dead_Space_%28mobile%29_logo.jpg" class="card-img-top" alt="..." height="180px">
+                <div class="card-body">
+                  <h5 class="card-title">Dead Space</h5>
+                  <p class="card-text">Jogo clássico de sobrevivência da Ea games totalmente offline e traduzido</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                    </small>
+                </div>
+              </div>
+            </div>
+            <div class="col jogo marvel-vs-capcom">
+              <div class="card h-100">
+                <img src="https://i.ytimg.com/vi/ZvekGuBroPk/maxresdefault.jpg" class="card-img-top" alt="..." height="180px;">
+                <div class="card-body">
+                  <h5 class="card-title">Marvel Vs Capcom</h5>
+                  <p class="card-text">Relembre o nostálgico jogo arcade da franquia marvel vs capcom</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">
+                        <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                    </small>
+                </div>
+              </div>
+            </div>
+            <div class="col jogo shrek-kart">
+                <div class="card h-100">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFc6QBUpqVY8_1nQoseqR5l82F4inzjmlygl_EaFfD6hB-IFCp0Mt3r4AgDOmWBbCvNCkN34QKXNRnH8quUxmocckaO41XEBSDWY09WgZ0QvyoDJTh4EM065el6jBrbrNXwMuraO3fMvc/s1600/Screenshot_2017-01-11-23-32-57.png" class="card-img-top" alt="..." height="180px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Shrek Kart</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  </div>
+                  <div class="card-footer">
+                      <small class="text-body-secondary">
+                          <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                      </small>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
