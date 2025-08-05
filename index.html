@@ -1,183 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Início</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="javaScript/inicio.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Início</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="javaScript/inicio.js"></script>
 </head>
+
 <body>
 
-    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex" href="inicio.html">
-                <img src="img/game.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
-                Mega Jogos
-            </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" id="termo" type="text" placeholder="Digite o nome do jogo" aria-label="Search">
-              <button class="btn btn-light" type="button" onclick="pesquisar()">Pesquisar</button>
-            </form>
+  <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex" href="index.html">
+        <img src="img/game.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+        Mega Jogos
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" id="termo" type="text" placeholder="Digite aqui" aria-label="Search">
+          <button class="btn btn-light" type="button" onclick="pesquisar()">Pesquisar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  
+  <div class="container-fluid pt-5">
+    <p class="h2 text-center my-4" id="titulo">JOGOS DISPONÍVEIS</p>
+    <div class="row">
+      <div class="col-12 col-md-2 mb-3">
+        <div class="list-group">
+          <a href="#" class="list-group-item active bg-dark border-dark">Categorias</a>
+          <a href="#apps" onclick="mostrar('apps')" class="list-group-item list-group-item-action">Apps</a>
+          <a href="#jogos" onclick="mostrar('jogos')" class="list-group-item list-group-item-action">Jogos</a>
+        </div>
+      </div>
+
+      <!-- JOGOS DO SITE -->
+
+      <div class="col-12 col-md-10">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col jogo blasphemous jogos">
+            <div class="card h-100">
+              <img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/ncom/software/switch/70010000007282/383b9eb424f60a5ab3f41ddbb2ea11014a7eed32faae88700a9669c080b21695"
+                class="card-img-top" alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Blasphemous</h5>
+                <p class="card-text">Um dos melhores jogos estilo souls-like já lançados para celular!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/BlasphemousDublado" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo God-Of-War-Chains-Of-Olympus jogos">
+            <div class="card h-100">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/de/thumb/b/b6/God_of_war_chains_of_olympus_logo.jpg/330px-God_of_war_chains_of_olympus_logo.jpg"
+                class="card-img-top" alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">God Of War Chains Of Olympus</h5>
+                <p class="card-text">Jogue um dos melhores jogos de psp no seu celular, enfrente vários inimigos com o
+                  lendário Kratos e toda a sua fúria</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/GowChainsOfOlympus" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo God-Of-War-Ghost-Of-Sparta jogos">
+            <div class="card h-100">
+              <img src="https://i.ytimg.com/vi/V_5ms63vbLs/maxresdefault.jpg" class="card-img-top" alt="..."
+                height="180px">
+              <div class="card-body">
+                <h5 class="card-title">God Of War Ghost Of Sparta</h5>
+                <p class="card-text">Jogue um dos melhores jogos de psp no seu celular, enfrente vários inimigos com o
+                  lendário Kratos, o fantasma de esparta!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/GowGhostOfSparta" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo call-of-duty-black-ops-zombies jogos">
+            <div class="card h-100">
+              <img
+                src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/5625a3ca-9b33-11e6-8eee-00163ec9f5fa/910395314/call-of-duty-black-ops-zombies-screenshot.png"
+                class="card-img-top" alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Call Of Duty Black Ops Zombies</h5>
+                <p class="card-text">Enfrente varias hordas de zumbis no melhor jogo já feito para celular!</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/CODBlackOpsZombiesMobile" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo modern-combat-3 jogos">
+            <div class="card h-100">
+              <img src="https://mkt-web.gameloft.com/static/6a9dfba8eae4d364bb7db8b17e5ddff9.jpg" class="card-img-top"
+                alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Modern Combat 3</h5>
+                <p class="card-text">Jogo Clássico de fps da Gameloft</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/bF0IQ" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo modern-combat-4 jogos">
+            <div class="card h-100">
+              <img src="https://mkt-web.gameloft.com/static/97e330fcf2e781f9fb096b1fd4fa561e.jpg" class="card-img-top"
+                alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Modern Combat 4</h5>
+                <p class="card-text">Jogo Clássico de fps da Gameloft</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/ModernCombat4Original" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo asphalt-5-hd jogos">
+            <div class="card h-100">
+              <img src="https://images.forfun.com/v2/fetch/52/522b56047744b4d2155fa23a95e0e42d.jpeg"
+                class="card-img-top" alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Asphalt 5 HD</h5>
+                <p class="card-text">Jogo clássico de corrida da Gameloft</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/Asphalt5HD" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo dead-space jogos">
+            <div class="card h-100">
+              <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Dead_Space_%28mobile%29_logo.jpg"
+                class="card-img-top" alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Dead Space</h5>
+                <p class="card-text">Jogo clássico de sobrevivência da Ea games totalmente offline e traduzido</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://fir3.net/DeadSpace" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo marvel-vs-capcom d-none">
+            <div class="card h-100">
+              <img src="https://i.ytimg.com/vi/ZvekGuBroPk/maxresdefault.jpg" class="card-img-top" alt="..."
+                height="180px;">
+              <div class="card-body">
+                <h5 class="card-title">Marvel Vs Capcom</h5>
+                <p class="card-text">Relembre o nostálgico jogo arcade da franquia marvel vs capcom</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col jogo shrek-kart d-none">
+            <div class="card h-100">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFc6QBUpqVY8_1nQoseqR5l82F4inzjmlygl_EaFfD6hB-IFCp0Mt3r4AgDOmWBbCvNCkN34QKXNRnH8quUxmocckaO41XEBSDWY09WgZ0QvyoDJTh4EM065el6jBrbrNXwMuraO3fMvc/s1600/Screenshot_2017-01-11-23-32-57.png"
+                class="card-img-top" alt="..." height="180px;">
+              <div class="card-body">
+                <h5 class="card-title">Shrek Kart</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                  additional
+                  content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- APPS DO SITE -->
+           
+          <div class="col spotify apps">
+            <div class="card h-100">
+              <img src="https://uploads.tracklist.com.br/file/uploads-tracklist-com-br/2023/07/spotify-758x426.jpg" class="card-img-top"
+                alt="..." height="180px">
+              <div class="card-body">
+                <h5 class="card-title">Spotify Premium</h5>
+                <p class="card-text">Um dos melhores apps de música com tudo desbloqueado para Android</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <a href="https://4br.me/spotifypremium2025" class="btn btn-sm btn-dark w-100">Baixar</a>
+                </small>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
 
-      <p class="h2 text-center my-4">JOGOS DISPONÍVEIS</p>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col jogo blasphemous">
-              <div class="card h-100">
-                <img src="https://www.centralxbox.com.br/wp-content/uploads/2019/10/blasphemous-3.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Blasphemous</h5>
-                  <p class="card-text">Um dos melhores jogos estilo souls-like já lançados para celular!</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/BlasphemousDublado" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo God-Of-War-Chains-Of-Olympus">
-              <div class="card h-100">
-                <img src="https://upload.wikimedia.org/wikipedia/de/thumb/b/b6/God_of_war_chains_of_olympus_logo.jpg/330px-God_of_war_chains_of_olympus_logo.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">God Of War Chains Of Olympus</h5>
-                  <p class="card-text">Jogue um dos melhores jogos de psp no seu celular, enfrente vários inimigos com o lendário Kratos e toda a sua fúria</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/GowChainsOfOlympus" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo God-Of-War-Ghost-Of-Sparta">
-              <div class="card h-100">
-                <img src="https://i.ytimg.com/vi/V_5ms63vbLs/maxresdefault.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">God Of War Ghost Of Sparta</h5>
-                  <p class="card-text">Jogue um dos melhores jogos de psp no seu celular, enfrente vários inimigos com o lendário Kratos, o fantasma de esparta!</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/GowGhostOfSparta" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo call-of-duty-black-ops-zombies">
-              <div class="card h-100">
-                <img src="https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/5625a3ca-9b33-11e6-8eee-00163ec9f5fa/910395314/call-of-duty-black-ops-zombies-screenshot.png" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Call Of Duty Black Ops Zombies</h5>
-                  <p class="card-text">Enfrente varias hordas de zumbis no melhor jogo já feito para celular!</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/CODBlackOpsZombiesMobile" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo modern-combat-3">
-              <div class="card h-100">
-                <img src="https://mkt-web.gameloft.com/static/6a9dfba8eae4d364bb7db8b17e5ddff9.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Modern Combat 3</h5>
-                  <p class="card-text">Jogo Clássico de fps da Gameloft</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/bF0IQ" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo modern-combat-4">
-              <div class="card h-100">
-                <img src="https://mkt-web.gameloft.com/static/97e330fcf2e781f9fb096b1fd4fa561e.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Modern Combat 4</h5>
-                  <p class="card-text">Jogo Clássico de fps da Gameloft</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/ModernCombat4Original" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo asphalt-5-hd">
-              <div class="card h-100">
-                <img src="https://images.forfun.com/v2/fetch/52/522b56047744b4d2155fa23a95e0e42d.jpeg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Asphalt 5 HD</h5>
-                  <p class="card-text">Jogo clássico de corrida da Gameloft</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/Asphalt5HD" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo dead-space">
-              <div class="card h-100">
-                <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Dead_Space_%28mobile%29_logo.jpg" class="card-img-top" alt="..." height="180px">
-                <div class="card-body">
-                  <h5 class="card-title">Dead Space</h5>
-                  <p class="card-text">Jogo clássico de sobrevivência da Ea games totalmente offline e traduzido</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="https://fir3.net/DeadSpace" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo marvel-vs-capcom d-none">
-              <div class="card h-100">
-                <img src="https://i.ytimg.com/vi/ZvekGuBroPk/maxresdefault.jpg" class="card-img-top" alt="..." height="180px;">
-                <div class="card-body">
-                  <h5 class="card-title">Marvel Vs Capcom</h5>
-                  <p class="card-text">Relembre o nostálgico jogo arcade da franquia marvel vs capcom</p>
-                </div>
-                <div class="card-footer">
-                    <small class="text-body-secondary">
-                        <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
-                    </small>
-                </div>
-              </div>
-            </div>
-            <div class="col jogo shrek-kart d-none">
-                <div class="card h-100">
-                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFc6QBUpqVY8_1nQoseqR5l82F4inzjmlygl_EaFfD6hB-IFCp0Mt3r4AgDOmWBbCvNCkN34QKXNRnH8quUxmocckaO41XEBSDWY09WgZ0QvyoDJTh4EM065el6jBrbrNXwMuraO3fMvc/s1600/Screenshot_2017-01-11-23-32-57.png" class="card-img-top" alt="..." height="180px;">
-                  <div class="card-body">
-                    <h5 class="card-title">Shrek Kart</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  </div>
-                  <div class="card-footer">
-                      <small class="text-body-secondary">
-                          <a href="#" class="btn btn-sm btn-dark w-100">Baixar</a>
-                      </small>
-                  </div>
-                </div>
-              </div>
-          </div>
+      </div>
     </div>
 
-      
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+    <script>
+      window.onload = mostrar("jogos");
+    </script>
 </body>
+
 </html>
